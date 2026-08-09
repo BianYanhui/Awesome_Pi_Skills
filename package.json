@@ -1,0 +1,63 @@
+{
+  "name": "awesome-pi-skills",
+  "version": "0.1.0",
+  "description": "Pi agent skills collection (double-check, iconfont-search) + slash commands ported from OpenAI Codex: /goal, /btw, /review, /diff, /plan.",
+  "type": "module",
+  "license": "MIT AND Apache-2.0",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "pi",
+    "skills",
+    "codex",
+    "goal",
+    "side-conversation",
+    "review",
+    "plan",
+    "diff",
+    "iconfont"
+  ],
+  "files": [
+    "AGENTS.md",
+    "LICENSE",
+    "LICENSE-APACHE-2.0",
+    "README.md",
+    "docs/",
+    "double-check/",
+    "iconfont-search/",
+    "extensions/",
+    "src/",
+    "tests/"
+  ],
+  "scripts": {
+    "test": "node --import tsx --test tests/*.test.ts",
+    "test:rpc": "node tests/rpc-btw-test.mjs",
+    "verify:pi": "pi --offline --no-extensions --extension ./extensions --version",
+    "pack:dry-run": "npm pack --dry-run"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-agent-core": "*",
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*",
+    "typebox": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-agent-core": "^0.82.1",
+    "@earendil-works/pi-ai": "^0.82.1",
+    "@earendil-works/pi-coding-agent": "^0.82.1",
+    "@earendil-works/pi-tui": "^0.82.1",
+    "tsx": "^4.21.0",
+    "typebox": "^1.1.37",
+    "typescript": "^5.6.0"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions"
+    ],
+    "skills": [
+      "./double-check",
+      "./iconfont-search"
+    ]
+  }
+}

@@ -7,6 +7,7 @@ A curated collection of [pi](https://github.com/earendil-works/pi) agent skills.
 | Skill | Description |
 |-------|-------------|
 | [double-check](double-check/README.md) | Completes your task with the current (main) model, then has a **different** model (preferring the latest: MiniMax → MiniMax-M3, DeepSeek → deepseek-v4-flash) independently check the result; revises and re-checks on failure (max 3 rounds), and reports which main/check models were used. |
+| [iconfont-search](iconfont-search/README.md) | Search and download clean standalone SVG icons from iconfont.cn (阿里巴巴矢量图标库) via its public API — no login needed. Auto-triggers on requests like「图标从 iconfont 里面自己搜」/ “search icons on iconfont”. Supports multi-keyword, sort by heat/name/date, HTML preview grid. |
 
 ## Installing a skill
 

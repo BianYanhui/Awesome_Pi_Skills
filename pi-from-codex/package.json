@@ -1,30 +1,24 @@
 {
-  "name": "awesome-pi-skills",
+  "name": "pi-from-codex",
   "version": "0.1.0",
-  "description": "Pi agent skills collection (double-check, iconfont-search) + slash commands ported from OpenAI Codex: /goal, /btw, /review, /diff, /plan.",
+  "description": "Slash commands for Pi, ported from OpenAI Codex: /goal, /btw, /review, /diff, /plan.",
   "type": "module",
-  "license": "MIT AND Apache-2.0",
+  "license": "Apache-2.0",
   "keywords": [
     "pi-package",
     "pi-extension",
     "pi",
-    "skills",
     "codex",
     "goal",
     "side-conversation",
     "review",
     "plan",
-    "diff",
-    "iconfont"
+    "diff"
   ],
   "files": [
     "AGENTS.md",
     "LICENSE",
-    "LICENSE-APACHE-2.0",
     "README.md",
-    "docs/",
-    "double-check/",
-    "iconfont-search/",
     "extensions/",
     "src/",
     "tests/"
@@ -54,10 +48,6 @@
   "pi": {
     "extensions": [
       "./extensions"
-    ],
-    "skills": [
-      "./double-check",
-      "./iconfont-search"
     ]
   }
 }

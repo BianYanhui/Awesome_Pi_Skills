@@ -11,6 +11,7 @@ subdirectory.
 | [double-check](double-check/README.md) | Completes your task with the current (main) model, then has a **different** model (preferring the latest: MiniMax → MiniMax-M3, DeepSeek → deepseek-v4-flash) independently check the result; revises and re-checks on failure (max 3 rounds), and reports which main/check models were used. |
 | [lastcall](lastcall/README.md) | **No silent exits** — leave a verifiable handoff before a context-heavy session stops. Distilled from [kimi-lastcall](https://github.com/kagamiurayama/kimi-lastcall) (MIT): the agent writes a 5-section handwritten handoff (current state / dead ends / unresolved / first next action / optional context) as a project file, marks it done with a session-bound marker, and the next session verifies and picks up. Fail-open, private state, audit = decisions only. |
 | [iconfont-search](iconfont-search/README.md) | Search and download clean standalone SVG icons from iconfont.cn (阿里巴巴矢量图标库) via its public API — no login needed. Auto-triggers on requests like「图标从 iconfont 里面自己搜」/ "search icons on iconfont". Supports multi-keyword, sort by heat/name/date, HTML preview grid. |
+| [handsoff-skill](handsoff-skill/README.md) | Keep `handsoff.md` at the repo root for the next agent. The header above the divider is written once; each handoff replaces only the section below it, including discussion, whether work is running, and the next step. |
 
 ### Installing a skill
 
@@ -18,6 +19,7 @@ subdirectory.
 # symlink (recommended — updates follow the repo)
 ln -s "$PWD/double-check" ~/.agents/skills/double-check
 ln -s "$PWD/iconfont-search" ~/.agents/skills/iconfont-search
+ln -s "$PWD/handsoff-skill" ~/.agents/skills/handsoff-skill
 
 # or copy
 cp -r double-check ~/.agents/skills/

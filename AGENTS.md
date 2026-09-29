@@ -6,6 +6,7 @@ Guidelines for agents and humans working on this repository.
 
 - `double-check/` — skill: task → different-model check → revise loop (max 3) → report.
 - `iconfont-search/` — skill: search & download SVG icons from iconfont.cn (no login).
+- `handsoff-skill/` — skill: create or refresh `handsoff.md` so the next agent can resume.
 - `pi-from-codex/` — self-contained pi extension project (slash commands `/goal`, `/btw`,
   `/review`, `/diff`, `/plan` + `goal_*` tools), kept as its own package with its own
   `package.json`, `AGENTS.md`, and Apache-2.0 license. See its `AGENTS.md` for internals.
